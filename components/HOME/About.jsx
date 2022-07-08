@@ -28,7 +28,7 @@ export default function About() {
                 <h4 className="about-welcome">About Us </h4>
                 <h3 className="about-title mt-10">Reasons to choose</h3>
                 <p className="mt-25">
-                  Lorem Ipsum is simply dummy text of the printing and
+                  {`Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
@@ -39,7 +39,7 @@ export default function About() {
                   It was popularised in the 1960s with the release of Letraset
                   sheets containing Lorem Ipsum passages, and more recently with
                   desktop publishing software like Aldus PageMaker including
-                  versions of Lorem Ipsum.
+                  versions of Lorem Ipsum.`}
                 </p>
                 <a className="main-btn mt-25" href="#">
                   learn more
