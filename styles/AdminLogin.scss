@@ -1,0 +1,21 @@
+.admin {
+  height:calc( 100vh - 114px);
+  position: relative;
+  &__login-form {
+    max-width: 480px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    .password-box {
+      position: relative;
+      .password-type {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

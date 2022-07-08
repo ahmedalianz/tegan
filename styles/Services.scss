@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+  .services-area {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+}
+
+.single-services {
+  padding: 50px 30px;
+  background-color: #fff;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  margin: 10px 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .single-services {
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .single-services {
+    padding: 30px 10px;
+  }
+}
+.single-services .services-icon .icon {
+  font-size: 52px;
+  color: #eb3656;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.single-services .services-content .services-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.single-services:hover {
+  background-color: #eb3656;
+}
+.single-services:hover .services-icon .icon {
+  color: #fff;
+}
+.single-services:hover .services-content .services-title,
+.single-services:hover .services-content p {
+  color: #fff;
+}
+#service {
+  background-color: #f57f9439;
+  padding: 3rem 0;
+}

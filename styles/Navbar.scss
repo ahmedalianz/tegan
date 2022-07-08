@@ -1,0 +1,188 @@
+.header-area {
+  position: relative;
+  background: linear-gradient(black, #211e1e);
+
+  /*===== Header Shapes Style =====*/
+
+  .shape {
+    position: absolute;
+    &.header-shape-one {
+      top: 0;
+      left: 0;
+    }
+    &.header-shape-two {
+      top: 125px;
+      left: 31%;
+    }
+    &.header-shape-three {
+      left: 10%;
+      top: 70vh;
+    }
+  }
+  /*===== Header Navbar Style =====*/
+
+  .navigation-bar {
+    padding: 0;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    .navbar-brand {
+      transition: all 0.2s ease-out;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+    .navbar-nav {
+      .nav-link {
+        color: white;
+        position: relative;
+        margin: 0 1rem;
+        &::after {
+          transition: all 0.4s ease-out;
+          left: 50%;
+          transform: translate(-50%);
+          content: "";
+          display: block;
+          width: 0%;
+          height: 4px;
+          background-color: var(--main-color);
+          bottom: -10px;
+          position: absolute;
+        }
+        &.active {
+          color: white;
+        }
+        &:hover {
+          color: white;
+
+          &::after {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .navigation-bar {
+      .navbar-nav {
+        position: relative;
+        .close-icon {
+          display: none;
+        }
+      }
+      .menu {
+        display: none;
+        cursor: pointer;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area {
+      .header-shape-one {
+        width: 230px;
+      }
+      .header-shape-two {
+        left: 40%;
+      }
+      .header-shape-four {
+        width: 260px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .navigation-bar {
+      .navbar-nav {
+        position: absolute;
+        padding: 20px;
+        background-color: var(--main-color);
+        border-radius: 8px;
+        top: 114px;
+        height: 320px;
+        width: 360px;
+        margin: 0 auto;
+        left: 50%;
+        display: grid;
+        place-items: center;
+        transition: all 0.4s ease-out;
+        transform-origin: top;
+        .nav-link {
+          font-size: 1.3rem;
+          padding: 5px 20px;
+          &:hover {
+            background-color: white;
+            color: var(--main-color);
+          }
+        }
+        .main-btn {
+          color: var(--main-color);
+          background-color: white;
+          margin-top: 15px;
+        }
+        .close-icon {
+          display: block;
+          position: absolute;
+          right: 10px;
+          padding: 10px;
+          cursor: pointer;
+          color: var(--main-color);
+          top: 5px;
+          background-color: white;
+          font-size: 1.5rem;
+        }
+        &.hide {
+          transform: scale(0);
+        }
+        &.show {
+          transform: scale(1) translateX(-50%);
+        }
+      }
+      .menu {
+        cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .header-area {
+      .header-shape-one {
+        width: 180px;
+      }
+      .header-shape-two {
+        left: 60%;
+        width: 60px;
+      }
+      .header-shape-three {
+        width: 90px;
+        bottom: 200px;
+      }
+      .header-shape-four {
+        bottom: -60px;
+        width: 210px;
+      }
+    }
+  }
+}
+.rotate-animation {
+  -webkit-animation: rotate 15s linear infinite;
+  -moz-animation: rotate 15s linear infinite;
+  -o-animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

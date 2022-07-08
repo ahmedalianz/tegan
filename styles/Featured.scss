@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap");
+
+.featured {
+  position: relative;
+  overflow: hidden;
+
+  .featured-img-container {
+    width: 100%;
+
+    position: relative;
+    height: calc(100vh - 113px);
+    float: right;
+    .shape {
+      position: absolute;
+      &.header-shape-four {
+        left: 0;
+        bottom: 0;
+
+        transform: translate(-50%, 50%);
+      }
+    }
+  }
+  .text {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+      color: var(--main-color);
+      animation: fadeInLeft 0.6s 0.3s ease-in-out forwards;
+      opacity: 0;
+      transform: translateX(-20px);
+      position: relative;
+      left: 55px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -55px;
+        top: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background: var(--main-color);
+        transform: translateY(-50%);
+      }
+    }
+    .sub-title {
+      font-family: "Great Vibes", cursive;
+      text-transform: uppercase;
+      font-size: 4rem;
+      letter-spacing: 0.2rem;
+      animation: fadeInLeft 0.6s 0.5s ease-in-out forwards;
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    .paragraph {
+      color: #777777;
+      font-size: 1rem;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: fadeInLeft 0.6s 1s ease-in-out forwards;
+    }
+    @keyframes fadeInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+@media (min-width: 570px) {
+  .featured {
+    .text {
+      left: 150px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .featured {
+    .featured-img-container {
+      width: 50%;
+    }
+
+    .text {
+      left: 50px;
+    }
+  }
+}

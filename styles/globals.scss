@@ -1,0 +1,133 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  word-break: break-word;
+  font-family: "Cairo", sans-serif;
+  --main-color: #eb3656;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+/*===== Main Button Style =====*/
+
+.main-btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 48px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 8px;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  background-color: var(--main-color);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.65);
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &:hover {
+    a {
+      color: var(--main-color);
+    }
+  }
+}
+.main-btn i {
+  margin-right: 5px;
+}
+.main-btn:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+.main-btn.main-btn-2 {
+  background-color: #fff;
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+.main-btn.main-btn-2:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #fff;
+}
+/*===== Section Title Style =====*/
+.section-title .sub-title {
+  font-size: 18px;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .section-title .sub-title {
+    font-size: 16px;
+  }
+}
+
+.section-title .title {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .section-title .title {
+    font-size: 24px;
+  }
+}
+/*===== ScrollBar Style =====*/
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.3rem;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+@import "./Navbar.scss";
+@import "./Featured.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "react-toastify/dist/ReactToastify.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "Footer.scss";
+@import "AdminLogin.scss";
+@import "AdminPage.scss";
+@import "About.scss";
+@import "Services.scss";
+@import "Projects.scss";
+@import "Contact.scss";
+@import "loader.scss";
