@@ -73,10 +73,8 @@ export default function Index({ productsList, adminData }) {
                 <td>
                   <Image
                     src={
-                      "/" +
-                        process.env.NEXT_PUBLIC_API_URL +
-                        "/" +
-                        product.image || "/images/about1.jpg"
+                      process.env.NEXT_PUBLIC_API_URL + "/" + product.image ||
+                      "/images/about1.jpg"
                     }
                     width={100}
                     height={100}

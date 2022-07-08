@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { domains: ["localhost"] },
+  images: { domains: ["localhost", "decore-server.herokuapp.com"] },
 };
 
 module.exports = nextConfig;
