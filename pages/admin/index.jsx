@@ -67,7 +67,7 @@ export default function Index({ productsList, adminData }) {
           </thead>
           <tbody>
             {products.map((product, index) => (
-              <tr>
+              <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{product.title} </td>
                 <td>
