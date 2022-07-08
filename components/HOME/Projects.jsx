@@ -60,10 +60,11 @@ export default function Projects() {
                   <div className="card-image">
                     <Image
                       src={
-                        "/" +
+                        (
                           process.env.NEXT_PUBLIC_API_URL +
                           "/" +
-                          product.image || "/images/about1.jpg"
+                          product.image
+                        ).replace("&w=128&q=75", "") || "/images/about1.jpg"
                       }
                       alt=""
                       layout="fill"
