@@ -94,7 +94,7 @@ export default function Contact() {
                     <div className="single-form form-group text-center">
                       <button type="submit" className="main-btn">
                         <a
-                          href={`mailto:ahmedalian400@gmail.com?subject=${subject}&body=This is ${name} and my phone is ${phone} :${body}`}
+                          href={`mailto:teganarchitectural2022@gmail.com?subject=${subject}&body=This is ${name} and my phone is ${phone} :${body}`}
                         >
                           send message
                         </a>

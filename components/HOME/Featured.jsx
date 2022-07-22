@@ -22,12 +22,8 @@ export default function Featured() {
         </div>
       </div>
       <div className="text">
-        <div className="title">Hey There !</div>
-        <div className="sub-title">{`I'm A designer`}</div>
-        <p className="paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          labore.
-        </p>
+        <div className="sub-title">{`Tegan`}</div>
+        <p className="paragraph">Architectural,Engineering and BIM services</p>
       </div>
     </section>
   );

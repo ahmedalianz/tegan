@@ -1,12 +1,19 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-
 import Image from "next/image";
 import React from "react";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+import UseWhatsapp from "whatsapp-react-component";
 export default function NavigationBar() {
   const [show, setShow] = React.useState(false);
   const hideMenu = () => setShow(false);
   const showMenu = () => setShow(true);
+  const onSubmit = () => {
+    // Pass values to the component
+    UseWhatsapp(
+      "+201121439820",
+      "Hello Tegan I'd Like To Know More About The Services You Provide"
+    );
+  };
   return (
     <Container className="navigation-bar">
       <Navbar expand="lg" sticky="top">
@@ -23,10 +30,10 @@ export default function NavigationBar() {
           <Nav.Link href="#service">Services</Nav.Link>
           <Nav.Link href="#project">Projects</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
-          <div className="navbar-btn ml-20">
-            <a className="main-btn" href="tel:+201121439820">
-              <BsFillTelephoneFill /> +20 112 143 9820
-            </a>
+          <div className="navbar-btn ml-20" onClick={onSubmit}>
+            <button className="main-btn">
+              <BsWhatsapp /> +20 112 143 9820
+            </button>
           </div>
         </Nav>
 

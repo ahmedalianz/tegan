@@ -1911,6 +1911,11 @@
   dependencies:
     "loose-envify" "^1.0.0"
 
+"whatsapp-react-component@^1.0.4":
+  "integrity" "sha512-fooQ3dmp6F3c4555TdYHy47qA7P1OAe2k9D7nGeRKVxzpHbdtXWwnU+tRdr6XZDJqb5J2m+j5sg5A10d86knGQ=="
+  "resolved" "https://registry.npmjs.org/whatsapp-react-component/-/whatsapp-react-component-1.0.4.tgz"
+  "version" "1.0.4"
+
 "which-boxed-primitive@^1.0.2":
   "integrity" "sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg=="
   "resolved" "https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz"

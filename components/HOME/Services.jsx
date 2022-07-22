@@ -5,7 +5,8 @@ import {
   BiBriefcase,
   BiBuildingHouse,
 } from "react-icons/bi";
-import { GiLoveLetter, GiTwoShadows } from "react-icons/gi";
+import { GiTwoShadows } from "react-icons/gi";
+import { BsBuilding } from "react-icons/bs";
 export default function Services() {
   return (
     <section id="service" className="services-area pt-125 pb-130 gray-bg">
@@ -31,8 +32,11 @@ export default function Services() {
               <div className="services-content mt-15">
                 <h4 className="services-title">Interior Design</h4>
                 <p className="mt-20">
-                  Mauris aliquam, turpis sed mattis placerat, justo risus
-                  pellentesque quam, id finibus risus arcu eget neque.
+                  Interior designers bring to life an artistic vision for work
+                  and living spaces, seeing out a project from conception to
+                  creation. Design plans should be cognizant of safety and
+                  functionality requirements and maintain a strict adherence to
+                  building codes and regulatory standards.
                 </p>
               </div>
             </div>
@@ -49,8 +53,11 @@ export default function Services() {
               <div className="services-content mt-15">
                 <h4 className="services-title">Design Consultancy</h4>
                 <p className="mt-20">
-                  Mauris aliquam, turpis sed mattis placerat, justo risus
-                  pellentesque quam, id finibus risus arcu eget neque.
+                  Develop construction drawings using AutoCAD; coordinate bid
+                  process and vendor selection; and manage construction process
+                  through final punch list. Manage design and customer
+                  experience, along with email newsletters, digital promotional
+                  creative and graphical print marketing materials
                 </p>
               </div>
             </div>
@@ -67,8 +74,11 @@ export default function Services() {
               <div className="services-content mt-15">
                 <h4 className="services-title">Residential Design</h4>
                 <p className="mt-20">
-                  Mauris aliquam, turpis sed mattis placerat, justo risus
-                  pellentesque quam, id finibus risus arcu eget neque.
+                  Our custom home design service is tailored to work with
+                  private clients who want a unique design that is crafted to
+                  their specific family needs and lifestyle. This process
+                  involves developing a new design concept that transitions to a
+                  complete set of construction documents.
                 </p>
               </div>
             </div>
@@ -85,8 +95,12 @@ export default function Services() {
               <div className="services-content mt-15">
                 <h4 className="services-title">Commercial Design</h4>
                 <p className="mt-20">
-                  Mauris aliquam, turpis sed mattis placerat, justo risus
-                  pellentesque quam, id finibus risus arcu eget neque.
+                  For exceptional commercial furniture from the best
+                  manufacturers in the industry, turn to Commercial Design
+                  Services. We have spent decades helping business owners ,
+                  design and furnish their interior office spaces, and we are
+                  well equipped to outfit a wide array of commercial
+                  environments
                 </p>
               </div>
             </div>
@@ -98,13 +112,20 @@ export default function Services() {
               data-wow-delay="0.8s"
             >
               <div className="services-icon">
-                <GiLoveLetter className="icon" />
+                <BsBuilding className="icon" />
               </div>
               <div className="services-content mt-15">
-                <h4 className="services-title">Hospitality Design</h4>
+                <h4 className="services-title">Exterior Design</h4>
                 <p className="mt-20">
-                  Mauris aliquam, turpis sed mattis placerat, justo risus
-                  pellentesque quam, id finibus risus arcu eget neque.
+                  Your exterior most times defines your personality since it’s
+                  the first impression for everyone at your homes. In short, it
+                  summaries who you are. As its already proven that modern and
+                  contemporary exterior house designs are becoming the most
+                  popular each day for house owners and those intending to own
+                  houses, Tegan stands to provide unique modern and contemporary
+                  house facades for our clients. We are trans generational
+                  through study and exposure when it comes to the designing
+                  world.
                 </p>
               </div>
             </div>
@@ -121,8 +142,12 @@ export default function Services() {
               <div className="services-content mt-15">
                 <h4 className="services-title">Co-working Space Design</h4>
                 <p className="mt-20">
-                  Mauris aliquam, turpis sed mattis placerat, justo risus
-                  pellentesque quam, id finibus risus arcu eget neque.
+                  In a world of start-ups, entrepreneurs and flexible
+                  freelancers – the demand for inspiring, beautifully designed
+                  coworking spaces is bigger than ever. Underutilised office
+                  spaces can become lucrative coworking spaces. If you have the
+                  building space, we have the ideas and the strategy to deliver
+                  an office fit-out that makes you stand out in the market.
                 </p>
               </div>
             </div>

@@ -121,25 +121,6 @@ export default function AddCategoryModal(props) {
             </Col>
           </Form.Group>
 
-          <Form.Group
-            as={Row}
-            className="mb-3"
-            controlId="formPlaintextPassword"
-          >
-            <Form.Label column sm="2">
-              Description
-            </Form.Label>
-            <Col sm="10">
-              <Form.Control
-                value={productFields.desc}
-                name="desc"
-                onChange={changeInputValue}
-                as="textarea"
-                type="text"
-              />
-            </Col>
-          </Form.Group>
-
           <Form.Group as={Row} controlId="formFileLg" className="mb-3">
             <Form.Label column sm="2">
               Choose Image

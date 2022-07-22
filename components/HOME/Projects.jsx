@@ -72,7 +72,6 @@ export default function Projects() {
                   </div>
                   <div className="card-description">
                     <p className="text-title"> {product.title}</p>
-                    <p className="text-body">{product.desc}</p>
                   </div>
                 </div>
               </div>
