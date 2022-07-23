@@ -8,12 +8,12 @@ export default function NavigationBar() {
   const showMenu = () => setShow(true);
   const onSubmit = () => {
     // Pass values to the component
-    useWhatsapp(
+    callWhatsapp(
       "+201121439820",
       "Hello Tegan I'd Like To Know More About The Services You Provide"
     );
   };
-  function useWhatsapp(mobileNumber, message) {
+  function callWhatsapp(mobileNumber, message) {
     let number = mobileNumber.replace(/[^\w\s]/gi, "").replace(/ /g, "");
 
     let url = `https://web.whatsapp.com/send?phone=${number}`;
