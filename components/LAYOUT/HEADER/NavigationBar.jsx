@@ -2,18 +2,27 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import Image from "next/image";
 import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
-import UseWhatsapp from "whatsapp-react-component";
 export default function NavigationBar() {
   const [show, setShow] = React.useState(false);
   const hideMenu = () => setShow(false);
   const showMenu = () => setShow(true);
   const onSubmit = () => {
     // Pass values to the component
-    UseWhatsapp(
+    useWhatsapp(
       "+201121439820",
       "Hello Tegan I'd Like To Know More About The Services You Provide"
     );
   };
+  function useWhatsapp(mobileNumber, message) {
+    let number = mobileNumber.replace(/[^\w\s]/gi, "").replace(/ /g, "");
+
+    let url = `https://web.whatsapp.com/send?phone=${number}`;
+
+    url += `&text=${encodeURI(message)}&app_absent=0`;
+
+    window.open(url);
+  }
+
   return (
     <Container className="navigation-bar">
       <Navbar expand="lg" sticky="top">
